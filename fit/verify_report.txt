@@ -1,0 +1,7 @@
+octahedral, the 50 complexes used in the fit        : n=50 median  6.1%  mean  8.8%  max  47%
+   3d metals                                       : n=34 median  8.1%  mean 10.3%  max  47%
+   4d/5d metals                                    : n=16 median  5.2%  mean  5.6%  max  20%
+tetrahedral (4/9 rule, NOT fitted)                  : n= 7 median 11.3%  mean 16.8%  max  59%
+Jahn-Teller in-plane values (NOT fitted)            : n= 7 median 30.1%  mean 29.7%  max  45%
+Cr(CO)6 (oxidation 0, ONE data point, CO not fitted): observed 34150, model 23758 cm-1
+spin state vs the book: 21 of 21 agree 

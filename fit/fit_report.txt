@@ -1,0 +1,59 @@
+fitting 50 octahedral complexes (clean, not Jahn-Teller in-plane values, ligands ['H2O', 'NH3', 'CN', 'F', 'Cl', 'Br'], oxidation +2..+4)
+
+=== 1) fitted constants (all data)
+  K    = 5480.560
+  R2   =    1.623
+  R3   =    1.890
+  g3   =    1.789
+  g4   =    2.244
+  NH3  =    1.258
+  CN   =    1.863
+  F    =    0.881
+  Cl   =    0.766
+  Br   =    0.676
+
+=== 2) fit quality on the data it was fitted to
+  OLD constants (one scale factor)             n=50  median 12.8%  mean 21.9%  90th pct   63%  max   73%
+  REFITTED constants                           n=50  median  6.1%  mean  8.8%  90th pct   19%  max   47%
+
+=== 3) honest check: cross-validation (the fit never sees the complex it predicts)
+  leave-one-complex-out, OLD constants         n=50  median 13.0%  mean 22.2%  90th pct   64%  max   74%
+  leave-one-complex-out, REFITTED              n=50  median  8.9%  mean 11.0%  90th pct   22%  max   51%
+  leave-one-METAL-out, OLD constants           n=50  median 12.9%  mean 23.0%  90th pct   66%  max   76%
+  leave-one-METAL-out, REFITTED                n=50  median 10.5%  mean 12.5%  90th pct   22%  max   54%
+    LOO OLD, 3d                                n=34  median 17.0%  mean 27.5%  90th pct   68%  max   74%
+    LOO REFITTED, 3d                           n=34  median 10.3%  mean 12.5%  90th pct   22%  max   51%
+    LOO OLD, 4d/5d                             n=16  median 10.1%  mean 11.0%  90th pct   19%  max   23%
+    LOO REFITTED, 4d/5d                        n=16  median  7.2%  mean  8.0%  90th pct   12%  max   24%
+
+=== 4) how well is each constant determined? (300 bootstrap refits, 5th-95th percentile)
+  K    5480.560   [5054.806, 6170.907]   (data points behind it: 50)
+  R2     1.623   [  1.510,   1.795]   (data points behind it: 8)
+  R3     1.890   [  1.715,   2.045]   (data points behind it: 8)
+  g3     1.789   [  1.592,   1.936]   (data points behind it: 28)
+  g4     2.244   [  1.996,   2.558]   (data points behind it: 9)
+  NH3    1.258   [  1.135,   1.390]   (data points behind it: 6)
+  CN     1.863   [  1.595,   2.339]   (data points behind it: 7)
+  F      0.881   [  0.810,   0.975]   (data points behind it: 10)
+  Cl     0.766   [  0.700,   0.837]   (data points behind it: 11)
+  Br     0.676   [  0.607,   0.748]   (data points behind it: 4)
+
+=== 5) data NOT used in the fit
+  Jahn-Teller in-plane values (Cr2+, Mn3+, Cu2+) n= 7  median 30.1%  mean 29.7%  90th pct   40%  max   45%
+  tetrahedral, 4/9 x octahedral (new)          n= 7  median 11.3%  mean 16.8%  90th pct   36%  max   59%
+  tetrahedral, 4/9 x octahedral (OLD, own scale) n= 7  median 38.5%  mean 47.8%  90th pct   85%  max  136%
+  tetrahedral detail (observed vs 4/9 rule, new constants): [('[CoCl4]2-', '3250', 3173), ('[CoBr4]2-', '2900', 2798), ('[FeCl4]-', '5100', 5678), ('[Co(NH3)4]2+', '5900', 5207), ('[MnCl4]2-', '2000', 3173), ('[FeCl4]2-', '4000', 3173), ('[NiCl4]2-', '3500', 3173)]
+  Cr(CO)6 (CO strength NOT fitted: one data point): [('Cr(CO)6', '34150', 20432)] -> old model gives about 20432 cm-1
+
+=== 6) spin states from the data  ->  pairing energy P(d) (cm-1)
+  d4: highest high-spin Delta 17506  lowest low-spin Delta 31053  book crossover Delta/B*B None  -> P = 23316  (geometric mean of the interval allowed by the spin data)
+  d5: highest high-spin Delta 17506  lowest low-spin Delta 31053  book crossover Delta/B*B 22545  -> P = 23316  (geometric mean of the interval allowed by the spin data)
+  d6: highest high-spin Delta 14691  lowest low-spin Delta 17353  book crossover Delta/B*B 9945  -> P = 15967  (geometric mean of the interval allowed by the spin data)
+  d7: highest high-spin Delta 11717  lowest low-spin Delta None  book crossover Delta/B*B 17700  -> P = 17700  (only a lower bound from spin data; book crossover (Delta/B x B) used)
+  P for other d-counts (only used for energy bookkeeping): mean = 20075 cm-1;  old model: 19631 cm-1
+    d4 high-spin: [('[Cr(H2O)6]2+', 9783), ('[Mn(H2O)6]3+', 17506), ('[MnCl6]3-', 12776), ('[CrCl6]4-', 7139), ('[MnF6]3-', 14691)] | low-spin: [('[Mn(CN)6]3-', 31053)]
+    d5 high-spin: [('[Mn(H2O)6]2+', 9783), ('[Fe(H2O)6]3+', 17506), ('[MnCl6]4-', 7139), ('[FeCl6]3-', 12776), ('[MnF6]4-', 8210), ('[FeF6]3-', 14691)] | low-spin: [('[Fe(CN)6]3-', 31053)]
+    d6 high-spin: [('[Fe(H2O)6]2+', 9783), ('[CoF6]3-', 14691)] | low-spin: [('[Co(H2O)6]3+', 17506), ('[Co(NH3)6]3+', 20967), ('[Fe(CN)6]4-', 17353), ('[Co(CN)6]3-', 31053)]
+    d7 high-spin: [('[Co(H2O)6]2+', 9783), ('[Co(NH3)6]2+', 11717)] | low-spin: []
+
+wrote fitted_constants.json
