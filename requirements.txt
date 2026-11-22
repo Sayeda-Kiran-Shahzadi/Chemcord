@@ -1,0 +1,9 @@
+pandas
+numpy
+# The bundled .joblib models were trained with scikit-learn 1.9.1. Pickled models are
+# not guaranteed to load in other versions; if they do not, retrain (see "Rebuilding").
+scikit-learn==1.9.1
+joblib
+rdkit            # only needed for the log K1 tool
+# Tkinter ships with the standard Python installer on Windows/macOS.
+# On Debian/Ubuntu install it with:  sudo apt install python3-tk
