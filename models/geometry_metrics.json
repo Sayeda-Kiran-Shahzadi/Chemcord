@@ -1,0 +1,137 @@
+{
+ "n_train": 79149,
+ "n_test": 19788,
+ "classes": [
+  "T-shaped",
+  "bent",
+  "irregular / distorted",
+  "linear",
+  "octahedral",
+  "other (rare)",
+  "pentagonal bipyramidal",
+  "piano stool",
+  "seesaw",
+  "square antiprismatic",
+  "square planar",
+  "square pyramidal",
+  "tetrahedral",
+  "trigonal bipyramidal",
+  "trigonal planar",
+  "trigonal prismatic"
+ ],
+ "accuracy": 0.8276228016979987,
+ "macro_F1": 0.5834632451454282,
+ "log_loss": 0.5641426155195259,
+ "old_rule_accuracy": 0.48266626238124116,
+ "old_rule_macro_F1": 0.13627394508478316,
+ "majority_baseline_accuracy": 0.26364463311097636,
+ "n_iter": 170,
+ "four_geometry_subset": {
+  "n_test": 13528,
+  "classifier_accuracy": 0.8999852158486102,
+  "old_rule_accuracy": 0.706017149615612
+ },
+ "confidence_vs_accuracy": [
+  {
+   "confidence": "0%-40%",
+   "n": 816,
+   "accuracy": 0.3014705882352941
+  },
+  {
+   "confidence": "40%-50%",
+   "n": 1238,
+   "accuracy": 0.4410339256865913
+  },
+  {
+   "confidence": "50%-60%",
+   "n": 1248,
+   "accuracy": 0.5456730769230769
+  },
+  {
+   "confidence": "60%-70%",
+   "n": 1276,
+   "accuracy": 0.6128526645768025
+  },
+  {
+   "confidence": "70%-80%",
+   "n": 1625,
+   "accuracy": 0.7563076923076923
+  },
+  {
+   "confidence": "80%-90%",
+   "n": 2223,
+   "accuracy": 0.8376068376068376
+  },
+  {
+   "confidence": "90%-100%",
+   "n": 11362,
+   "accuracy": 0.9708678049639148
+  }
+ ],
+ "per_class_recall": {
+  "T-shaped": {
+   "n": 122,
+   "recall": 0.23770491803278687
+  },
+  "bent": {
+   "n": 59,
+   "recall": 0.1694915254237288
+  },
+  "irregular / distorted": {
+   "n": 438,
+   "recall": 0.3881278538812785
+  },
+  "linear": {
+   "n": 945,
+   "recall": 0.9132275132275133
+  },
+  "octahedral": {
+   "n": 5217,
+   "recall": 0.9396204715353651
+  },
+  "other (rare)": {
+   "n": 30,
+   "recall": 0.23333333333333334
+  },
+  "pentagonal bipyramidal": {
+   "n": 110,
+   "recall": 0.4909090909090909
+  },
+  "piano stool": {
+   "n": 2271,
+   "recall": 0.8586525759577279
+  },
+  "seesaw": {
+   "n": 469,
+   "recall": 0.27292110874200426
+  },
+  "square antiprismatic": {
+   "n": 48,
+   "recall": 0.625
+  },
+  "square planar": {
+   "n": 5055,
+   "recall": 0.9584569732937686
+  },
+  "square pyramidal": {
+   "n": 1439,
+   "recall": 0.6240444753300903
+  },
+  "tetrahedral": {
+   "n": 1817,
+   "recall": 0.8420473307649973
+  },
+  "trigonal bipyramidal": {
+   "n": 869,
+   "recall": 0.45454545454545453
+  },
+  "trigonal planar": {
+   "n": 863,
+   "recall": 0.6465816917728853
+  },
+  "trigonal prismatic": {
+   "n": 36,
+   "recall": 0.2222222222222222
+  }
+ }
+}
